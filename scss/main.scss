@@ -1,0 +1,397 @@
+@import "./partials/_variables";
+@import "./partials/_resets";
+
+/* INTER FONT */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* HEADER STYLING */
+#desktop_header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  padding-left: 50px;
+  border-bottom: 5px solid $grey;
+
+  /* FIRST COLUMN */
+  .logo_container {
+    justify-self: end;
+    .logo_image {
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  /* SECOND COLUMN */
+  nav {
+    justify-self: center;
+    ul {
+      display: flex;
+      gap: 30px;
+
+      li a {
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.2s;
+
+        &:hover {
+          background-image: url("../images/underline.svg");
+          background-repeat: no-repeat;
+          background-position: 100% 150%;
+        }
+      }
+    }
+  }
+
+  /* THIRD COLUMN */
+  .header_last_button {
+    background: $base-blue;
+    height: 100%;
+    grid-column: 3;
+    align-content: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      color: $pure-white;
+      padding: 0px 100px;
+      font-weight: 700;
+
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+}
+/* HEADER ENDS */
+
+/* HERO SECTION */
+.hero {
+  background-image: url("../images/techrealm\ hero\ section.png");
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  .col_1 {
+    max-width: 70%;
+    h2 {
+      font-size: 80px;
+      text-align: center;
+      color: $font-black;
+      line-height: 90px;
+      margin-bottom: 30px;
+
+      span {
+        background-image: url("../images/underline.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+
+  .col_2 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .project {
+      display: flex;
+      gap: 10px;
+      p {
+        span {
+          font-size: 40px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .years {
+      display: flex;
+      gap: 10px;
+      p {
+        span {
+          font-size: 40px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+/* HERO SECTION  ENDS*/
+
+/* SERVICES SECTION */
+.services {
+  background-image: url("../images/Cloudy.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .col_1 {
+    margin-bottom: 50px;
+    text-align: center;
+
+    h2 {
+      font-size: 50px;
+      color: $font-black;
+      line-height: 90px;
+    }
+
+    p {
+      font-size: 20px;
+      color: $font-black;
+    }
+  }
+
+  .col_2 {
+    display: flex;
+    gap: 50px;
+    max-width: $max-width;
+    margin: 0 auto;
+
+    .service_box {
+      background: $grey;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      border: 2px solid $base-blue;
+      border-radius: 10px 20px;
+      transition: all 0.3s;
+
+      &:hover {
+        border-radius: 20px 10px;
+      }
+
+      img {
+        width: 50px;
+      }
+
+      h3 {
+        font-size: 20px;
+
+        span {
+          color: $base-blue;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+/* SERVICES SECTION ENDS */
+
+/* GRID SERVICES SECTION */
+.grid_service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: $max-width;
+  margin: 0 auto;
+  gap: 100px;
+
+  .grid_service_box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px solid $base-blue;
+    padding-bottom: 50px;
+    transition: all 0.3s;
+
+    &:hover {
+      border-bottom: 2px solid $base-blue;
+    }
+
+    .grid_header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      img {
+        width: 40px;
+      }
+
+      h2 {
+        font-size: 30px;
+        transition: all 0.3s;
+
+        span {
+          color: $base-blue;
+        }
+
+        &:hover {
+          color: $base-blue;
+        }
+      }
+    }
+  }
+
+  p {
+    color: #495261;
+    line-height: 30px;
+  }
+
+  .grid_service_box_5 {
+    text-align: center;
+    grid-column: 1/3;
+    max-width: 50%;
+    margin: 0 auto;
+
+    .grid_header {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+/* GRID SERVICES SECTION ENDS */
+
+/* CHALLENGE SECTION */
+.challenge_cover {
+  background-color: #7794db;
+}
+
+.challenge {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 100px;
+
+  .col_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h2 {
+      color: white;
+      font-size: 40px;
+    }
+
+    h3 {
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    p {
+      color: white;
+      line-height: 27px;
+    }
+
+    a {
+      color: white;
+      font-size: 12px;
+      text-decoration: underline;
+      font-weight: 600;
+      line-height: 20px;
+      transition: all 0.5s;
+      text-align: right;
+
+      &:hover {
+        text-decoration: none;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .col_2 {
+    img {
+      width: 3000px;
+      border-radius: 15px;
+    }
+  }
+}
+/* CHALLENGE SECTION ENDS */
+
+/* NEWSLETTER SECTION */
+.newsletter {
+  margin-left: 200px;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  p {
+    position: absolute;
+    left: 880px;
+    font-size: 22px;
+  }
+
+  .newsletter_box {
+    clip-path: url(#top_right_chipped);
+    height: 500px;
+    background: black;
+    width: 100%;
+
+    input {
+      margin-top: 300px;
+      margin-left: 50px;
+      background: #262627;
+      outline: none;
+      height: 100px;
+      width: 700px;
+      padding: 20px;
+      border-radius: 30px;
+      border: none;
+      font-size: 50px;
+      font-weight: 600;
+    }
+  }
+
+  .newsletter_box_mobile {
+    display: none;
+  }
+}
+/* NEWSLETTER SECTION ENDS */
+
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 400px;
+
+  .media_holder {
+    p {
+      max-width: 60%;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .footer_nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+/* FOOTER SECTION ENDS */
+
+/* MOBILE RESPONSIVENESS */
+
+@import "./partials/mobileResponsive";
