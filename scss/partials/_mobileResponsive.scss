@@ -207,4 +207,18 @@
     }
   }
   /* NEWSLETTER SECTION ENDS */
+
+  /* FOOTER SECTION */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 1000px !important;
+
+    .media_holder {
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+  /* FOOTER SECTION ENDS */
 }

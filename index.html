@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Techrealm | Digital agency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
   </head>
@@ -168,10 +182,10 @@
 
     <!-- GRID SERVICE SECTION -->
     <section class="grid_service">
-      <div class="grid_service_box grid_service_box_1">
+      <div class="grid_service_box grid_service_box grid_service_box_1">
         <div class="grid_header">
           <img src="./images/service.svg" alt="" />
-          <h2>Software Development<span>.</span></h2>
+          <h2 id="grid_service_box_h2_1">Software Development<span>.</span></h2>
         </div>
 
         <p>
@@ -184,10 +198,10 @@
         </p>
       </div>
 
-      <div class="grid_service_box grid_service_box_2">
+      <div class="grid_service_box grid_service_box grid_service_box_2">
         <div class="grid_header">
           <img src="./images/service.svg" alt="" />
-          <h2>AI Development<span>.</span></h2>
+          <h2 class="grid_service_box_h2">AI Development<span>.</span></h2>
         </div>
 
         <p>
@@ -200,10 +214,10 @@
         </p>
       </div>
 
-      <div class="grid_service_box grid_service_box_3">
+      <div class="grid_service_box grid_service_box grid_service_box_3">
         <div class="grid_header">
           <img src="./images/service.svg" alt="" />
-          <h2>IT Investments<span>.</span></h2>
+          <h2 class="grid_service_box_h2">IT Investments<span>.</span></h2>
         </div>
 
         <p>
@@ -216,10 +230,10 @@
         </p>
       </div>
 
-      <div class="grid_service_box grid_service_box_4">
+      <div class="grid_service_box grid_service_box grid_service_box_4">
         <div class="grid_header">
           <img src="./images/service.svg" alt="" />
-          <h2>Infrastructure and Deployment<span>.</span></h2>
+          <h2 class="grid_service_box_h2">Infrastructure and Deployment<span>.</span></h2>
         </div>
 
         <p>
@@ -233,10 +247,10 @@
         </p>
       </div>
 
-      <div class="grid_service_box grid_service_box_5">
+      <div class="grid_service_box grid_service_box grid_service_box_5">
         <div class="grid_header">
           <img src="./images/service.svg" alt="" />
-          <h2>Digital Marketing<span>.</span></h2>
+          <h2 class="grid_service_box_h2">Digital Marketing<span>.</span></h2>
         </div>
 
         <p>
@@ -251,6 +265,124 @@
       </div>
     </section>
     <!-- GRID SERVICE SECTION ENDS -->
+
+    <!-- OUR WORKS SECTION -->
+    <section class="techrealm_carousel">
+      <div class="techrealm_carousel_header">
+        <h2>Our Work</h2>
+        <p>
+          We are proud of our work, and we are always looking for new
+          challenges. Take a look at some of our recent portfolio:
+        </p>
+      </div>
+
+      <section class="owl-carousel owl-theme owl_container">
+        <div class="techrealm_carousel_container">
+          <img src="./images/marketing.jpeg" alt="" />
+
+          <div class="techrealm_carousel_footer">
+            <div>
+              <p>Marketing</p>
+              <h4>Klientas</h4>
+            </div>
+
+            <h2>&#8599;</h2>
+          </div>
+        </div>
+
+        <div class="techrealm_carousel_container">
+          <img src="./images/alj-jash.jpeg" alt="" />
+
+          <div class="techrealm_carousel_footer">
+            <div>
+              <p>Marketing</p>
+              <h4>Al-Jash Tradig</h4>
+            </div>
+
+            <h2>&#8599;</h2>
+          </div>
+        </div>
+
+        <div class="techrealm_carousel_container">
+          <img src="./images/shop optica.jpeg" alt="" />
+
+          <div class="techrealm_carousel_footer">
+            <div>
+              <p>Marketing</p>
+              <h4>Shop Optica</h4>
+            </div>
+
+            <h2>&#8599;</h2>
+          </div>
+        </div>
+
+        <div class="techrealm_carousel_container">
+          <img src="./images/monify.jpeg" alt="" />
+
+          <div class="techrealm_carousel_footer">
+            <div>
+              <p>Marketing</p>
+              <h4>Monify</h4>
+            </div>
+
+            <h2>&#8599;</h2>
+          </div>
+        </div>
+
+        <div class="techrealm_carousel_container">
+          <img src="./images/penpal.jpeg" alt="" />
+
+          <div class="techrealm_carousel_footer">
+            <div>
+              <p>Marketing</p>
+              <h4>Penpal</h4>
+            </div>
+
+            <h2>&#8599;</h2>
+          </div>
+        </div>
+
+        <div class="techrealm_carousel_container">
+          <img src="./images/omni.jpg" alt="" />
+
+          <div class="techrealm_carousel_footer">
+            <div>
+              <p>Marketing</p>
+              <h4>Omnilearn LMS</h4>
+            </div>
+
+            <h2>&#8599;</h2>
+          </div>
+        </div>
+
+        <div class="techrealm_carousel_container">
+          <img src="./images/aicc.jpeg" alt="" />
+
+          <div class="techrealm_carousel_footer">
+            <div>
+              <p>Marketing</p>
+              <h4>AI Connect-Caller</h4>
+            </div>
+
+            <h2>&#8599;</h2>
+          </div>
+        </div>
+
+        <div class="techrealm_carousel_container">
+          <img src="./images/zuhd.jpeg" alt="" />
+
+          <div class="techrealm_carousel_footer">
+            <div>
+              <p>Marketing</p>
+              <h4>ZUHD</h4>
+            </div>
+
+            <h2>&#8599;</h2>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- OUR WORKS SECTION ENDS -->
 
     <!-- CHALLENGE SECTION -->
     <section class="challenge_cover">
@@ -352,7 +484,16 @@
           us bring your vision to life.
         </p>
 
-        <div class="media_section"></div>
+        <div class="media_section">
+          <p>FOLLOW US:</p>
+
+          <div>
+            <img src="./images/facebook.svg" alt="" />
+            <img src="./images/instagram.svg" alt="" />
+            <img src="./images/tiktok.svg" alt="" />
+            <img src="./images/x.svg" alt="" />
+          </div>
+        </div>
       </div>
 
       <div class="footer_nav">
@@ -391,6 +532,20 @@
     </footer>
     <!-- FOOTER SECTION ENDS -->
 
+    <div class="copyright"><p><p>Copyright TechRealm Pakistan© 2024. All Rights Reserved.</p></p></div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

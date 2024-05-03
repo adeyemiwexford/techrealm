@@ -226,10 +226,6 @@
         span {
           color: $base-blue;
         }
-
-        &:hover {
-          color: $base-blue;
-        }
       }
     }
   }
@@ -252,6 +248,49 @@
   }
 }
 /* GRID SERVICES SECTION ENDS */
+
+/* WORK CAROUSEL SECTION */
+.techrealm_carousel {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+
+  .techrealm_carousel_header {
+    text-align: center;
+
+    h2 {
+      font-size: 50px;
+      font-weight: 600;
+    }
+  }
+
+  .owl_container {
+    .owl_container {
+      .techrealm_carousel_container {
+        img {
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  .techrealm_carousel_header {
+    text-align: center;
+  }
+
+  .owl_container {
+    .techrealm_carousel_container {
+      img {
+        height: 300px;
+        width: 500px;
+      }
+    }
+  }
+}
+/* WORK CAROUSEL SECTION ENDS */
 
 /* CHALLENGE SECTION */
 .challenge_cover {
@@ -330,13 +369,13 @@
   .newsletter_box {
     clip-path: url(#top_right_chipped);
     height: 500px;
-    background: black;
+    background: $base-blue;
     width: 100%;
 
     input {
       margin-top: 300px;
       margin-left: 50px;
-      background: #262627;
+      background: wheat;
       outline: none;
       height: 100px;
       width: 700px;
@@ -359,7 +398,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
   max-width: 90%;
   margin: 0 auto;
   margin-top: 50px;
@@ -367,6 +405,28 @@ footer {
   height: 400px;
 
   .media_holder {
+    .media_section {
+      margin-top: 20px;
+
+      div {
+        display: flex;
+        gap: 30px;
+
+        img {
+          margin-top: 10px;
+          width: 50px;
+          padding: 5px;
+          border-radius: 10px;
+          border: 2px solid $grey;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+
     p {
       max-width: 60%;
     }
@@ -391,6 +451,15 @@ footer {
   }
 }
 /* FOOTER SECTION ENDS */
+
+.copyright {
+  margin: 50px 0px;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+  }
+}
 
 /* MOBILE RESPONSIVENESS */
 
